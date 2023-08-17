@@ -1,1 +1,13 @@
-<p>character works!</p>
+<h2>{{chracter.name | uppercase}} Detalles</h2>
+<div><span>id: </span>{{chracter.id}}</div>
+<div>
+	<label>nombre:
+	<input [(ngModel)] = "character.name" placeholder = "nombre aqui"/>
+	</label>
+</div>
+<div>
+	<label>titulo / grado militar:
+	<input [(ngModel)] = "character.militarGrade" placeholder = "grado aqui"/>
+	</label>
+</div>
+ 
