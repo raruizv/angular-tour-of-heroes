@@ -30,6 +30,20 @@ body {
     background-color: rgb(58, 131, 66, 35%);
 }
 
+h5,
+li[class="list-group-item"] {
+	font-family: Garamond, serif;
+}
+
+div[class="card"] {
+	color: white;
+	background-color:  #1e8449;	
+}
+
+li[class="list-group-item"] {
+	background-color:  #52be80;
+}
+
 body,
 input[type="text"],
 button {

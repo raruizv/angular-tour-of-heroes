@@ -1,13 +1,60 @@
-<h2>{{character.name | uppercase}} Detalles</h2>
-<div><span>id: </span>{{character.id}}</div>
-<div>
-	<label>nombre:
-	<input [(ngModel)] = "character.name" placeholder = "nombre aqui"/>
-	</label>
-</div>
-<div>
-	<label>titulo / grado militar:
-	<input [(ngModel)] = "character.militarGrade" placeholder = "grado aqui"/>
-	</label>
-</div>
- 
+<!DOCTYPE HTML>
+
+<body>
+	<div class="row">
+		<div class="col-4">
+			<div class="card" style="width: 18rem;">
+			  <img src="/assets/4.jpg" class="card-img-top" alt="saladino image">
+			  <div class="card-body">
+				<h5 class="card-title">{{saladino.name | uppercase}} Detalles</h5>
+				<p class="card-text">{{saladino.description}}</p>    
+			  </div>
+			  <ul class="list-group list-group-flush">
+				<li class="list-group-item"><span>id: </span>{{saladino.id}}</li>
+				<li class="list-group-item">nombre:
+					<input [(ngModel)] = "saladino.name" placeholder = "nombre aqui"/>
+				</li>
+				<li class="list-group-item">titulo / grado militar:
+					<input [(ngModel)] = "saladino.militarGrade" placeholder = "grado aqui"/>
+				</li>
+				<li class="list-group-item">Cualidades:
+					<input [(ngModel)] = "saladino.makings" placeholder = "listado aqui"/>
+				</li>
+				<li class="list-group-item">Batalla conocida:
+					<input [(ngModel)] = "saladino.battle" placeholder = "batalla aqui"/>
+				</li>
+			  </ul>
+			  <div class="card-body">
+				<a href="#" class="btn btn-secondary">Regresar</a>
+			  </div>
+			</div>
+		</div>
+		<div class="col-4">	
+			<div class="card" style="width: 18rem;">
+			  <img src="/assets/2.jpg" class="card-img-top" alt="rommel image">
+			  <div class="card-body">
+				<h5 class="card-title">{{rommel.name | uppercase}} Detalles</h5>
+				<p class="card-text">{{rommel.description}}</p>    
+			  </div>
+			  <ul class="list-group list-group-flush">
+				<li class="list-group-item"><span>id: </span>{{rommel.id}}</li>
+				<li class="list-group-item">nombre:
+					<input [(ngModel)] = "rommel.name" placeholder = "nombre aqui"/>
+				</li>
+				<li class="list-group-item">titulo / grado militar:
+					<input [(ngModel)] = "rommel.militarGrade" placeholder = "grado aqui"/>
+				</li>
+				<li class="list-group-item">Cualidades:
+					<input [(ngModel)] = "rommel.makings" placeholder = "listado aqui"/>
+				</li>
+				<li class="list-group-item">Batalla conocida:
+					<input [(ngModel)] = "rommel.battle" placeholder = "batalla aqui"/>
+				</li>
+			  </ul>
+			  <div class="card-body">
+				<a href="#" class="btn btn-secondary">Regresar</a>
+			  </div>
+			</div>
+		</div>
+	</div>
+ </body>
