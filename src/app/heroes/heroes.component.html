@@ -1,0 +1,37 @@
+<h2>Los personajes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
+      <span class="badge">{{hero.id}}</span>
+      <span class="name">{{hero.name}}</span>
+    </button>
+  </li>
+</ul>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
+
+<table class="table table-striped">
+  <!--caption>
+  This is an example table, and this is its caption to describe the contents.
+</caption-->
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Rango militar</th>
+      <th>Batalla conocida</th>
+      <th>Cualidades</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let hero of heroes">
+      <td>{{hero.id}}</td>
+      <td>{{hero.name}}</td>
+      <td>{{hero.description}}</td>
+      <td>{{hero.militarGrade}}</td>
+      <td>{{hero.battle}}</td>
+      <td>{{hero.makings}}</td>
+  </tbody>
+</table>

@@ -1,0 +1,25 @@
+<div *ngIf="hero">
+    <div class="card" style="width: 18rem;">
+        <img src="{{hero.url}}" class="card-img-top" alt="">
+        <div class="card-body">
+            <h2 class="card-title">{{hero.name | uppercase}} Detalles</h2>
+            <p class="card-text"><span>Descripción: </span>{{hero.description}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><span>id: </span>{{hero.id}}</li>
+            <li class="list-group-item"><span>Grado militar: </span>{{hero.militarGrade}}</li>
+            <li class="list-group-item"><span>Batalla Conocida: </span>{{hero.battle}}</li>
+            <li class="list-group-item"><span>Cualidades: </span>{{hero.makings}}</li>
+        </ul>
+        <div class="card-body">            
+            <a href="#" class="card-link">Regresar</a>
+        </div>
+    </div>
+    <!--
+    <div>
+        <label for="hero-name">Nombre Personaje: </label>
+        <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    </div>
+    -->
+</div>
+<br>

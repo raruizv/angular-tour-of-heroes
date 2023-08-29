@@ -58,7 +58,7 @@ a {
 }
 button {
     background-color: #eee;
-    border: none;
+    border: 3px solid;
     border-radius: 4px;
     cursor: pointer;
     color: black;
